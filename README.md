@@ -1,10 +1,10 @@
 # Multi-Targeted Virtual Screening (VS) Pipeline
 
-This repository contains scripts and workflows for performing **multi-targeted virtual screening (VS)** using structure-based docking and machine learning-based scoring. The pipeline is designed to identify compounds with strong or selective binding affinities across multiple protein targets, enabling polypharmacology and selectivity analysis in drug discovery.
+This repository contains scripts and workflows for performing **multi-targeted virtual screening (VS) for targets involved in taupathies** using structure-based docking and machine learning-based scoring. The pipeline is designed to identify compounds with strong or selective binding affinities across multiple protein targets, enabling polypharmacology and selectivity analysis in drug discovery.
 
 ## Features
 
-- **Automated Docking:**  
+- **Rescoring of compounds based on gnina:**  
   Batch docking of compound libraries against multiple protein targets using [Gnina](https://github.com/gnina/gnina) or similar docking tools.
 
 - **Pose Extraction and Scoring:**  
@@ -18,31 +18,13 @@ This repository contains scripts and workflows for performing **multi-targeted v
 - **Data Processing:**  
   Uses [RDKit](https://www.rdkit.org/) and [pandas](https://pandas.pydata.org/) for handling chemical data and tabular results.
 
-## Workflow Overview
-
-1. **Docking:**  
-   - Prepare protein structures and ligand libraries.
-   - Dock ligands against each target using Gnina.
-
-2. **Pose Selection:**  
-   - For each compound and target, extract the pose with the highest CNN affinity.
-
-3. **Result Aggregation:**  
-   - Merge results from all targets into a single table.
-   - Calculate summary statistics (mean, max, selectivity).
-
-4. **Analysis:**  
-   - Rank compounds by multi-target affinity or selectivity.
-   - Export top candidates for further validation.
-
-## Getting Started
-
 ### Prerequisites
 
 - Python 3.x
 - RDKit
 - pandas
-- Gnina (for docking)
+- Instadock ( for docking )
+- Gnina ( for docking )
 
 ### Example Usage
 

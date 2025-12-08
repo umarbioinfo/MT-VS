@@ -11,7 +11,7 @@ This repository contains ML scripts and workflows for performing **multi-targete
 - RDKit
 - pandas
 - Instadock ( for docking )
-- gnina ( for docking )
+- gnina ( for docking and rescoring )
 
 
 ## Citation

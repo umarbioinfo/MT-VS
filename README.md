@@ -18,9 +18,6 @@ This repository contains ML scripts and workflows for performing **multi-targete
 
 If you use this pipeline, please cite the appropriate docking software (e.g., Gnina), RDKit, and any relevant publications.
 
-## License
-
-This project is licensed under the MIT License.
 
 ---
 
